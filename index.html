@@ -1,1 +1,67 @@
-<p>Roberto </p>
+<<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+<link rel="stylesheet" href="dierenasiel.css">
+<title>Dierenasiel De Ark</title>
+</head>
+<body>
+<header>
+	<h1 class="banner">Dierenasiel De Ark</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="overzichtpag.html" class="active">Home</a></li>
+            <li><a href="">Honden</a></li>
+            <li><a href="katte.html">Katten</a></li>
+            <li><a href="">Andere</a></li>
+            <li><a href="">Dierenasielen</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="solicitud">
+<label for="Naam">Naam</label>
+<input type="text" id="Naam" name="naam" required>
+</section>
+</body>
+</html>
+<style>
+    @import url(https://fonts.bunny.net/css?family=ubuntu:300);
+body{ font-family: 'Ubuntu', sans-serif; }
+
+.banner{
+font-family: 'Flanders Art Regular';
+margin:0;
+padding-top:1em;
+padding-bottom:1em;
+color:#fefefe;
+text-align:center;
+background: linear-gradient(0deg, #189585, #ccf2ed); }
+
+.menu{
+   padding: 0;
+   margin: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;}
+
+.menu>li{ list-style-type: none; margin:0; }
+
+.menu>li>a{
+   text-decoration: none;
+   display: block;
+   padding: 1.5rem 1rem;
+   color: #fefefe;
+   font-weight: 500;
+   font-size: 1.1rem;
+   background-color: #189585;
+   text-align: center;
+}
+
+.menu>li:last-child>a{ text-align: right; }
+
+.menu>li>a.active{ background-color: #c99339; }
+
+.menu>li>a:hover{ background-color: #25a998; }
+#solicitud{padding-top: 11em;
+text-align: r;}
+</style>
