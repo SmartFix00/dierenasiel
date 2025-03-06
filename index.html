@@ -1,51 +1,162 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nl-BE">
 
 <head>
 <link rel="stylesheet" href="dierenasiel.css">
 <title>Dierenasiel De Ark</title>
 </head>
+
 <body>
+
 <header>
-	<h1 class="banner">Dierenasiel De Ark</h1>
+    <h1 class="banner">Dierenasiel De Ark</h1>
     <nav>
         <ul class="menu">
             <li><a href="overzichtpag.html" class="active">Home</a></li>
             <li><a href="">Honden</a></li>
             <li><a href="katte.html">Katten</a></li>
             <li><a href="">Andere</a></li>
-            <li><a href="">Dierenasielen</a></li>
+            <li><a href="copy2.html">Dierenasielen</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
-<section id="solicitud">
-<label for="Naam">Naam</label>
-<input type="text" id="Naam" name="naam" required>
-</section>
+
+<main id="overzichtspagina">
+   <aside>
+     <div class="filterHeader">Geslacht</div>
+     <ul class="filterKeuzeLijst">
+       <li>
+         <div>
+           <input type="checkbox" name="geslachtReu" id="geslachtReu">
+           <label for="geslachtReu">Reu</label>
+         </div>
+         <div>23</div>
+       </li>
+
+       <li>
+         <div>
+           <input type="checkbox" name="geslachtTeef" id="geslachtTeef">
+           <label for="geslachtTeef">Teef</label>
+         </div>
+         <div>45</div>
+       </li>
+     </ul>
+     <div class="filterHeader">Leeftijd</div>
+     <ul class="filterKeuzeLijst">
+       <li>
+         <div>
+           <input type="checkbox" name="leeftijdPuppy" id="leeftijdPuppy">
+           <label for="leeftijdPuppy">Puppy</label>
+         </div>
+         <div>1</div>
+       </li>
+
+       <li>
+         <div>
+           <input type="checkbox" name="leeftijdJunior" id="leeftijdJunior">
+           <label for="leeftijdJunior">Junior</label>
+         </div>
+         <div>38</div>
+       </li>
+
+       <li>
+         <div>
+           <input type="checkbox" name="leeftijdVolwassen" id="leeftijdVolwassen">
+           <label for="leeftijdVolwassen">Volwassen</label>
+         </div>
+         <div>64</div>
+       </li>
+       <li>
+         <div>
+           <input type="checkbox" name="leeftijdSenior" id="leeftijdSenior">
+           <label for="leeftijdSenior">Senior</label>
+         </div>
+         <div>13</div>
+       </li>
+       <li>
+         <div>
+           <input type="checkbox" name="leeftijdOngekend" id="leeftijdOngekend">
+           <label for="leeftijdOngekend">Ongekend</label>
+         </div>
+         <div>15</div>
+       </li>
+     </ul>
+   </aside>
+   <div id="content">
+     <article class="dier">
+       <img src="hond-charly.jpg" alt="afbeelding van hond">
+       <section class="omschrijving">
+         <h3><a href="Charly.html">Charly</a></h3>
+         <ul class="details">
+           <li>Mechelse herder</li>
+           <li>Reu - 2 jaar</li>
+           <li>Charly werd afgestaan aan het asiel omdat de baasjes verhuisden
+             en hij mocht niet mee. Deze hond is een typische mechelse herdershond ...</li>
+         </ul>
+       </section>
+       <section class="afhaalpunt">
+         <h3>Vzw Dierenasiel De Knuffelpootjes</h3>
+         REKKEM
+       </section>
+     </article>
+     
+     <article class="dier">
+       <img src="hond-kazan.jpg" alt="afbeelding van hond">
+       <section class="omschrijving">
+         <h3><a href="Kazan.html">Kazan</a></h3>
+         <ul class="details">
+           <li>Duitse herdershond</li>
+           <li>Reu - 3 jaar</li>
+           <li>Kazan genoot ven een luxe leven samen met zijn baasje toen het noodlot plots toesloeg. Inmiddels is zijn baasje opgenomen op palliatieve zorgen en ...</li>
+         </ul>
+       </section>
+       <section class="afhaalpunt">
+         <h3>Helping dogs Vzw</h3>
+         TIELT
+       </section>
+     </article>
+     <article class="dier">
+       <img src="hond-jack.jpg" alt="afbeelding van hond">
+       <section class="omschrijving">
+         <h3><a href="Jack.html">Jack</a></h3>
+         <ul class="details">
+           <li>Beagle</li>
+           <li>Reu - 2 jaar</li>
+           <li>Charly en Jack werden afgestaan aan het asiel omdat de baasjes verhuisen en ze mochten niet mee. 			Deze 2 broertjes zijn typische beagle's die ...</li>
+         </ul>
+       </section>
+       <section class="afhaalpunt">
+         <h3>Vzw Dierenasiel De Knuffelpootjes</h3>
+         REKKEM
+       </section>
+     </article>
+   </div>
+</main>
 </body>
 </html>
-<style>
+<Style>
     @import url(https://fonts.bunny.net/css?family=ubuntu:300);
 body{ font-family: 'Ubuntu', sans-serif; }
-
+@font-face{
+    font-family: 'Flanders Art Sans';
+    src: url('FlandersArtSans-Regular.woff') format('woff'); 
+}
 .banner{
-font-family: 'Flanders Art Regular';
-margin:0;
-padding-top:1em;
-padding-bottom:1em;
-color:#fefefe;
-text-align:center;
-background: linear-gradient(0deg, #189585, #ccf2ed); }
-
+   font-family: 'Flanders Art Sans';
+   margin:0;
+   padding-top:1em;
+   padding-bottom:1em;
+   color:#fefefe;
+   text-align:center;
+   background: linear-gradient(0deg, #189585, #ccf2ed);
+}
 .menu{
    padding: 0;
    margin: 0;
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;}
-
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr; }
 .menu>li{ list-style-type: none; margin:0; }
-
 .menu>li>a{
    text-decoration: none;
    display: block;
@@ -54,14 +165,63 @@ background: linear-gradient(0deg, #189585, #ccf2ed); }
    font-weight: 500;
    font-size: 1.1rem;
    background-color: #189585;
-   text-align: center;
-}
-
+   text-align: center; }
 .menu>li:last-child>a{ text-align: right; }
-
 .menu>li>a.active{ background-color: #c99339; }
-
 .menu>li>a:hover{ background-color: #25a998; }
-#solicitud{padding-top: 11em;
-text-align: r;}
-</style>
+main#overzichtspagina{
+    display: grid;
+    grid-template-columns: 200px auto;
+    column-gap: 50px;
+    padding: 50px; }
+.filterHeader {
+    padding: 2px 0px 5px 0px;
+    border-bottom: #999999 1px solid; }
+.filterKeuzeLijst>li {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    margin: 5px 0px 5px 0px;
+    padding: 5px 0px 5px 0px; }
+.dier {
+  background: #fefefe;
+  color: #0a0a0a;
+  width: 300px;
+  border: 1px solid #deedeb;
+  display: grid;
+  grid-template-rows: 1fr auto auto; }
+.dier>img {
+  width: 300px;
+  height: 300px; }
+.dier>.omschrijving {
+  padding: 0px 20px 0px 20px; }
+.dier>.afhaalpunt {
+  border-top: 1px solid #deedeb;
+  padding: 20px 20px 20px 20px;
+  background: #f8fbfb; }
+.omschrijving>h3 {
+  color: #189585; }
+.dier>.afhaalpunt>p {
+  margin: 0px; }
+.dier>.afhaalpunt>h3 {
+  font-size: 1em;
+  margin: 0px; }
+.omschrijving>ul{
+  list-style:none;
+  padding: 0px; }
+.details li:nth-child(1){
+  font-weight: bold;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em; }
+.details li:nth-child(2){
+  font-size: 0.83em;
+  font-weight: bold;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em; }
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 25px;
+  justify-items:center; }
+  .omschrijving>h3>a{color: #189585;text-decoration: none;}
+  .omschrijving>h3>a:hover{color: #25a998;}
