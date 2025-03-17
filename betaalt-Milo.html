@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="NL-BE">
+    <head>
+        <link rel="stylesheet" href="dierenasiel.css">
+        <title>Dierenasiel de Ark</title>
+    </head>
+    <body>
+        <head>
+            <h1 class="banner">Dierenasiel de Ark</h1>
+            <nav>
+    <ul class="menu">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="">Honden</a></li>
+    <li><a href="kat.html">katten</a></li>
+    <li><a href="">Andere</a></li>
+    <li><a href="dierenasiel">Dierenasiel</a></li>
+    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </head>
+        <body>
+            <h1>Huisdier Aankoop - Betaling via PayPal</h1>
+            
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <!-- Verkoper's PayPal e-mailadres -->
+                <input type="hidden" name="business" value="jouw_paypal_email@voorbeeld.com">
+                
+                <!-- Betalingstype -->
+                <input type="hidden" name="cmd" value="_xclick">
+                
+                <!-- Productnaam -->
+                <input type="hidden" name="item_name" value="Huisdier Aankoop">
+                
+                <!-- Prijs -->
+                <input type="hidden" name="amount" value="prijs_van_huisdier"> <!-- Vervang met de prijs -->
+                
+                <!-- Valuta -->
+                <input type="hidden" name="currency_code" value="EUR">
+                
+                <!-- URL voor notificatie van succesvolle betaling -->
+                <input type="hidden" name="notify_url" value="URL_voor_backend_verwerking_van_betaling">
+                
+                <!-- URL waar naartoe wordt gestuurd na succesvolle betaling -->
+                <input type="hidden" name="return" value="URL_na_betaling">
+                
+                <!-- URL waar naartoe wordt gestuurd als betaling wordt geannuleerd -->
+                <input type="hidden" name="cancel_return" value="URL_na_annulering">
+                
+                <h3>Aankoopdetails</h3>
+                <p>Prijs: €<span id="prijs">350.00 euro</span></p>
+                <p>Ras: <span id="ras">Siamés</span></p>
+                <p>Leeftijd: <span id="leeftijd">3 jaar</span></p>
+        
+                <h3>Kopersinformatie</h3>
+                <label for="koper">Naam van de Koper:</label>
+                <input type="text" id="koper" name="koper" required>
+                
+                <label for="email_koper">E-mailadres van de Koper:</label>
+                <input type="email" id="email_koper" name="email_koper" required>
+                
+                <br><br>
+                <button type="submit">Betalen met PayPal</button>
+            </form>
+
+</body>
+</html>
+    </body>
+</html>
+<style>
+       @import url(https://fonts.bunny.net/css?family=ubuntu:300);
+body{ font-family: 'Ubuntu', sans-serif; }
+@font-face{
+    font-family: 'Flanders Art Sans';
+    src: url('FlandersArtSans-Regular.woff') format('woff'); }
+   .banner{ font-family: 'Flanders Art Sans';
+    margin: 0;
+   padding-top: 1em;
+   padding-bottom: 1em;
+   color:#fefefe;
+   text-align: center;
+   background: linear-gradient(0deg,#189585,#ccf2ed);
+   } 
+
+   .menu{margin: 0;
+    padding: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr ;}
+   .menu>li{list-style-type: none;margin: 0;}
+   .menu>li>a{text-decoration: none;
+   display: block;
+   padding: 1.5rem 1rem;
+   font-weight: 500;
+   font-size: 1.1rem;
+   color: #fefefe;
+   text-align: center;background-color: #189585;}
+   .menu>li>a:hover{background-color: #25a998;}
+   .menu>li>a.active{background-color: #c99339;}
+   
+</style>
