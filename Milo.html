@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+<link rel="stylesheet" href="dierenasiel.css">
+<title>Dierenasiel De Ark</title>
+</head>
+<body>
+<header>
+	<h1 class="banner">Dierenasiel De Ark</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="">Honden</a></li>
+            <li><a href="kat.html">Katten</a></li>
+            <li><a href="">Andere</a></li>
+            <li><a href="dierenasiel">Dierenasiel</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="detailpagina">
+<section id="titel">
+    Hallo, <h2>Milo</h2>
+</section>
+<section id="foto">
+<img src="images (1).jfif" alt="Foto van Tomy. Een lieve Kat">
+</section>
+<section id="details">
+<ul class="lijstDetail">
+<li class="detailItem">
+    <div>Naam : </div><div>Milo</div>
+</li>
+<li class="detailItem">
+    <div>Geslacht : </div><div>T</div>
+</li>
+<li class="detailItem">
+    <div>Leeftijd : </div><div>2 jaar</div>
+</li>
+<li class="detailItem">
+    <div>Ras : </div>Siamés<div></div>
+</li>
+<li class="detailItem">
+    <div>Kindvriendelijk : </div><div>Ja</div>
+</li>
+<li class="detailItem">
+    <div>Kan omgaan met andere Katten : </div><div>Ja</div>
+</li>
+<li class="detailItem">
+    <div>Kan omgaan met andere huisdieren : </div><div>Neen</div>
+</li>
+<li class="detailItem">
+    <div>Referentie : </div><div>1546845</div>
+</li>
+</ul>
+</section>
+<section id="beslist">
+	<a href="betaalt-Tomy.html">
+    <input class="button" type="button" value="Ik neem deze !">
+	</a>
+</section>
+</main>
+</body>
+</html>
+<style>
+@import url(https://fonts.bunny.net/css?family=ubuntu:300);
+body{ font-family: 'Ubuntu', sans-serif; }
+
+.banner{
+font-family: 'Flanders Art Regular';
+margin:0;
+padding-top:1em;
+padding-bottom:1em;
+color:#fefefe;
+text-align:center;
+background: linear-gradient(0deg, #189585, #ccf2ed); }
+
+.menu{
+   padding: 0;
+   margin: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;}
+
+.menu>li{ list-style-type: none; margin:0; }
+
+.menu>li>a{
+   text-decoration: none;
+   display: block;
+   padding: 1.5rem 1rem;
+   color: #fefefe;
+   font-weight: 500;
+   font-size: 1.1rem;
+   background-color: #189585;
+   text-align: center;
+}
+
+.menu>li:last-child>a{ text-align: right; }
+
+.menu>li>a.active{ background-color: #c99339; }
+
+.menu>li>a:hover{ background-color: #25a998; }
+main#detailpagina{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100px auto 100px;
+  grid-template-areas:
+      "header header"
+      "foto details"
+      "beslist beslist";
+  column-gap: 25px;
+  padding: 50px;
+}
+
+#titel {
+  grid-area: header;
+  font-size: 2em;
+  color: #189585;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+
+#titel>h2 {
+  display: inline; }
+ul.lijstDetail {
+  font-size: 0.8em;
+  color: #2f2d2e; }
+ul.lijstDetail>li {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+ul.lijstDetail>li:nth-child(even) {
+  background-color: #f8fbfb; }
+ul.lijstDetail>li>div {
+  padding: 10px; }
+
+#foto {
+  grid-area: foto; }
+#details {
+  grid-area: details; }
+#beslist {
+  grid-area: beslist;
+  text-align: center;
+  padding: 25px; }
+#beslist>a>.button {
+  border: 0px;
+  background-color: #c99339;
+  font-family: inherit;
+  padding: 15px;
+  color: white;
+  font-weight: bold;}
+ #beslist>a>:hover{background-color:#189585;}
+	
+	
+  
+
+</style>
